@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
                         <NavBtnLink to="/newsletter">Newsletter</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
-            </Nav>  
+            </Nav>
         </>
     )
 }
