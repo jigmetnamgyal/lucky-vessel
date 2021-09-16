@@ -1,0 +1,22 @@
+.hamburger{
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left:20px;
+}
+.hamburger:focus{
+    outline: none;
+}
+.hamburger .hamLine:nth-child(2){
+    width: 50%;
+}
+.hamLine{
+    font-size: 30px;
+    color: #4C5270; 
+    
+}

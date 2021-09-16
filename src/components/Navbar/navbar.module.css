@@ -1,0 +1,184 @@
+.navBar {
+    position: fixed;
+    display: flex;
+    height: 13vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 50px; */
+    z-index: 20000;
+    margin: 0 auto;
+    /* padding-top: 20px; */
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(255, 255, 255, 1);
+    /* border-bottom: 2px solid #29A0B1; */
+    transition: all 0.3s ease-in-out;
+}
+.header__scrolled .header__logo {
+    height: 7vh;
+    transition: all 0.2 ease-in-out;
+}
+.header__scrolled {
+    height: 8vh;
+}
+.socialMediaContainer {
+    display: none;
+}
+
+.hamHolder {
+    flex: 1;
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.goHam-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.goHam-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.goHam-exit {
+    opacity: 1;
+}
+.goHam-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+.navBarHolder {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.header__navigation {
+    display: none;
+    /* background-color: #000000; */
+}
+.header__navigation > ul > a {
+    text-decoration: none;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Istok Web', sans-serif;
+    /* letter-spacing: 4px; */
+    font-weight: bolder;
+
+}
+.img_container {
+    height: 100%;
+    width: 100px;
+    display: none;
+    transition: all 0.5 ease-in-out;
+}
+.header__logo {
+    width: 100px;
+    height: 100%;
+    background-color: #000000;
+}
+.navbarLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    object-fit: contain;
+    /* background-color: #000000; */
+    height: 13vh;
+}
+.astroCLogo {
+    /* width: 180px; */
+    height: 100%;
+    /* transform: scale(1.2); */
+    /* margin-top: -17px; */
+}
+@media only screen and (max-width: 685px) {
+    .navbarLogo {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+    .navBar {
+        height: 10vh;
+    }
+    .astroCLogo {
+        width: 100px;
+        height: 10vh;
+        /* transform: scale(1.2); */
+        /* margin-top: -14px; */
+    }
+}
+
+@media screen and (min-width: 915px) {
+
+    .astroCLogo {
+        transform: scale(1.5);
+        /* width: 200px; */
+        height: 100%;
+    }
+    .navbarLogo {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+        height: 13vh;
+        /* background-color: #000000; */
+        flex: 0.3;
+    }
+    .header__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        z-index: 10000000;
+    }
+    .header__navigation > ul {
+        /* background-color: green; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+    .header__navigation > ul > a {
+        /* margin: 0 15px; */
+        color: black;
+    }
+    .header__navigation > ul > a:hover {
+        background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        transition: all 0.1s ease-in;
+        text-decoration: none;
+    }
+    .hamHolder {
+        display: none;
+    }
+    .img_container {
+        display: block;
+        flex: 1;
+    }
+
+    .navBar {
+        display: flex;
+    }
+    .socialMediaContainer {
+        flex: 0.34;
+        display: flex;
+        padding-right: 35px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .solmedia {
+        font-size: 22px;
+        color: black;
+    }
+    .solmedia:hover {
+        background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
